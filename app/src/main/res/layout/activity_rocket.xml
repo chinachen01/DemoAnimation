@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/value_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过ValueAnimator实现view伸缩动画"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/object_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/value_animator"
+        android:text="通过ObjectAnimator实现view伸缩动画"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/float_window_animator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/object_animator"
+        android:text="QQ悬浮窗动效"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#ff0000" />
+
+</RelativeLayout>

@@ -101,9 +101,18 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.button_simple_object:
                     simpleAnimatorObject();
                     break;
-                case R.id.button_next:
+                case R.id.button_circle:
                     Intent intent = new Intent(MainActivity.this, CircleActivity.class);
                     startActivity(intent);
+                    break;
+                case R.id.button_point:
+                    startActivity(new Intent(MainActivity.this, PointActivity.class));
+                    break;
+                case R.id.button_rocket:
+                    startActivity(new Intent(MainActivity.this, RocketActivity.class));
+                    break;
+                case R.id.button_transition:
+                    startActivity(new Intent(MainActivity.this, TransitionFromActivity.class));
                     break;
                 default:
                     break;
