@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.example.chenyong.demoanimation.MainActivity.Presenter" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.chenyong.demoanimation.MainActivity">
+
+            <Button
+                android:id="@+id/button_simple_alpha"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple alpha for no view" />
+
+            <Button
+                android:id="@+id/button_simple_alpha1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple alpha for text view" />
+
+            <Button
+                android:id="@+id/button_simple_rotation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple rotation for text view" />
+
+            <Button
+                android:id="@+id/button_simple_translationX"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple translationX for text view" />
+
+            <Button
+                android:id="@+id/button_simple_compose"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple compse for text view" />
+            <Button
+                android:id="@+id/button_simple_object"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{presenter.onClick}"
+                android:text="simple animation object" />
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="200dp"
+                android:onClick="@{presenter.onClick}"
+                android:text="next"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/text_alpha_demo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="演示Object动画for alpha ....." />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
+
